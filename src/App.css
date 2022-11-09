@@ -115,6 +115,7 @@ code {
   padding: 10px;
   color: white;
   display: flex;
+  width: 50%;
 }
 
 .driver-card-img-container {
