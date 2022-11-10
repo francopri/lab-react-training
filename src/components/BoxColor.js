@@ -1,12 +1,19 @@
+// poderia desconstruir o objeto props e incluir o nome das propriedades!  DESCONSTRUINDO OBJETO
+
 function BoxColor(props) {
 
     return (
+        // O Style espera um objeto
         <div className="boxColor-border" style={{ backgroundColor: `rgb(${props.r},${props.g},${props.b})`, color: getColor(props.r, props.g, props.b) }}>
             <div>rgb({props.r},{props.g},{props.b})</div>
+            {/* Com o objeto descontruido seria rgb{r},{g},{b} */}
             <div>{rgbToHex(props.r, props.g, props.b)}</div>
         </div>
     )
 }
+
+//Outra forma para mostrar HEX
+// #{r.toString(16)};
 
 function rgbToHex(r, g, b) {
 
